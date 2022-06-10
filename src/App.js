@@ -12,12 +12,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/location" element={<Location/>}></Route>
-          <Route path="/services" element={<Services/>}></Route>
-          <Route path="/teams" element={<Teams/>}></Route>
-          <Route path="/appointment" element={<Appointment/>}></Route>
-          <Route path="/confirmation" element={<Confirmation/>}></Route>
+          <Route path="/SEG31" exact element={<Home/>}></Route>
+          <Route path="/SEG31/location" exact element={<Location/>}></Route>
+          <Route path="/SEG31/services" exact element={<Services/>}></Route>
+          <Route path="/SEG31/teams" exact element={<Teams/>}></Route>
+          <Route path="/SEG31/appointment" exact element={<Appointment/>}></Route>
+          <Route path="/SEG31/confirmation" exact element={<Confirmation/>}></Route>
         </Routes>
       </Router>
     </div>
