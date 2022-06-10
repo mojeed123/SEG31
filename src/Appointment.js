@@ -20,54 +20,36 @@ function Appointment() {
         <div className="appoint">
           <h1 className='header1'>APPOINTMENTS</h1>
         <Container >
-            <h1>SERVICES</h1>
+            <h3>SERVICES</h3>
             <Container>
-            <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Cuts
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">BUZZ CUT</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">CLEAN CUT</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">CLASSIC SHAVE/ BEARD TRIM</Dropdown.Item>
-            </Dropdown.Menu>
-            
-          </Dropdown>
+            <Form.Select aria-label="CUTS">
+              <option>select the the type of cut </option>
+              <option value="1">BUZZ CUT</option>
+             <option value="2">CLEAN CUT</option>
+             <option value="3">CLASSIC SHAVE/BEARD TRIM</option>
+              </Form.Select>
             </Container>
             <Container>
-              <h1>EXTRAS</h1>
+              <h3>EXTRAS</h3>
               <Container>
-              <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              OTHERS
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">SHAMPOO</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">SCALP TREATMENT</Dropdown.Item>
-              
-            </Dropdown.Menu>
-            
-          </Dropdown>
+              <Form.Select aria-label="EXTRAS">
+              <option>select the extra if applicable </option>
+              <option value="1">SHAMPOO</option>
+             <option value="2">SCALP TREATMENT</option>
+             <option value="3">COLOUR</option>
+              </Form.Select>
 
               </Container>
             </Container>
             <Container>
-              <h1>TEAM</h1>
+              <h3>TEAM</h3>
               <Container>
-              <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              TEAM
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">John</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Jackson</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Ronaldo</Dropdown.Item>
-            </Dropdown.Menu>
-            
-          </Dropdown>
+              <Form.Select aria-label="TEAM MEMBER">
+              <option>select the person you want </option>
+              <option value="1">John</option>
+             <option value="2">Jackson</option>
+             <option value="3">Ronaldo</option>
+              </Form.Select>
 
 
               </Container>
@@ -93,33 +75,19 @@ function Appointment() {
               <Container>
               <h3>Date and Time</h3>
                 <Container>
-                <div className='innertext'>
-                <div>
-                  <h1 className='divs'>Sunday -2pm</h1>
-                  <button>Select</button>
-                </div>
-                <div>
-                <h1 className='divs'>Monday -6pm</h1>
-                <button>Select</button>
-                </div>
-                <div> 
-                  <h1 className='divs'>Tuesday - 5pm</h1>
-                  <button>Select</button>
-                </div>
-                <div> 
-                  <h1 className='divs'>Tuesday - 11am</h1>
-                  <button>Select</button>
-                </div>
-                <div> 
-                  <h1 className='divs'>Wednesday - Walk- in</h1>
-                  <button>Select</button>
-                </div>
-                <div> 
-                  <h1 className='divs'>Thursday - 4pm</h1>
-                  <button>Select</button>
-                </div>
-                </div>
-
+               
+                <Form.Select aria-label="DATE AND TIME">
+              <option>pick the date and time available </option>
+              <option value="1">Sunday-4pm</option>
+             <option value="2">Sunday-10am</option>
+             <option value="3">Monday- 10am to 2pm</option>
+             <option value="4">Tuesday- 7pm</option>
+             <option value="5">Tuesday- 3pm</option>
+             <option value="6">Wednesday- 5pm</option>
+             <option value="7">Thursday- 10am to 6pm</option>
+             <option value="8">Friday- 10am to 1pm</option>
+             <option value="9">Friday - 1pm to 5pm</option>
+              </Form.Select>
                
               </Container>
               </Container>
